@@ -1,0 +1,32 @@
+/* Reset */
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: rgb(218, 218, 218)；
+}
+body{
+    font: 1.6rem 'Work Sans', sans-serif;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    margin: 0;
+    color: #222;
+  
+}
+
+h1,h2,h3,h4,p,figure,ul, button{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  background-color: none;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+* {
+    box-sizing: border-box;
+  }

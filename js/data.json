@@ -1,0 +1,14 @@
+{
+  "presidents":[
+     {
+        "id": "1",
+        "name":"Charles de Gaulles",
+        "mandat":"1959-1969",
+        "naissance":"1890",
+        "deces":"1970",
+        "image":"sources/Charles_de_Gaulles.jpeg"
+     }
+
+
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracker-Login</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenue à Bug Tracker！</h1>
+    </header>
+    <hr/>
+    <main class="container">
+
+        <div class="form-container" role="region" aria-labelledby="form-login form-register">
+            <form id="login-form">
+              <h2>Login</h2>
+              <div class="input-box">
+                <label for="login-username">Nom d'utilisateur:</label>
+                <input type="text" id="login-username" name="login-username" required>
+              </div>
+              <div class="input-box">
+                <label for="login-password">Mot de passe:</label>
+                <input type="password" id="login-password" name="login-password" required>
+              </div>
+
+              <div class="btn-form">
+                <button id="btn-login-a" type="submit">Login</button>
+                <button id="btn-register-a" type="submit">Register</button>
+              </div>
+            </form>
+
+
+            <form id="register-form">
+              <h2>S'inscrire</h2>
+              <div class="input-box">
+                <label for="register-username">Nom d'utilisateur:</label>
+                <input type="text" id="register-username" name="register-username" required>
+              </div>
+              <div class="input-box">
+                <label for="register-password">Mot de passe:</label>
+                <input type="password" id="register-password" name="register-password" required>
+              </div>
+              <div class="input-box">
+                <label for="register-password">Confirmez votre mot de passe:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+              </div>
+
+              <div class="btn-form">
+                <button id="btn-login-b" type="submit">Login</button>
+                <button id="btn-register-b" type="submit">Register</button>
+              </div>
+            </form>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; - hj xu - <time datetime="2023-02-27">2023</time>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/main.js" ></script>
+
+</body>
+
+</html>

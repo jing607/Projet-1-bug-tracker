@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+
+
+:root{
+  --primary-color: #513eff;
+  --body-color : #222;
+  --btn-color : var(--primary-color);
+  --border-light-color : #EDEBFF;
+  --gray-300-color : #D4D3E0;
+  --shadow-bg-color : rgba(5, 0, 51, 0.08);
+  --shadow-sm-color : rgba(4, 0, 36, 0.08);
+}
+
+/* LOGIN PAGE */
+
+#register-form {
+  display: none;
+}
+  
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+#login-form {
+  width: 45rem;
+  background: #fff;
+  border: .2rem solid var(--border-light-color);
+  border-radius: 1.5rem;
+
+  box-shadow: 0px 4px 8px 1px var(--shadow-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 4rem;
+  gap: 1rem;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.input-box {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 400px;
+height: 76px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 4.8rem;
+  border: .1rem solid var(--gray-300-color);
+  border-radius: 1rem;
+}
+
+.btn-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem;
+  gap: 2rem;
+}
