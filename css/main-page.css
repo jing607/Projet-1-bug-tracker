@@ -2,36 +2,109 @@
 
 /* Navigation */
 
-header {
-    background-color: var(--primary-color);
-    height: 8rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
-  header ul{
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
+header{
+  background-color: var(--primary-color);
+  height: 8rem;
+  max-width: 1140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  header img{
-    display: block;
-    width: 4rem;
-  }
-  
-  header h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-  }
+header ul{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
+header img{
+  display: block;
+  width: 4rem;
+}
 
-  /* Table */
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: 8rem;
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  right: 8rem;
+  gap: 2rem;
+}
+
+.menu a {
+  color: #fff;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu a:hover {
+  border-bottom: .1rem solid #fff; 
+}
+
+/* Bugs overview */
+
+.bugs-overview {
+  display: flex;
+  flex-direction: row;
+  margin: 8rem 0;
+  gap: 2rem;
+}
+
+.overview-bloc{
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bugs-overview img {
+  width: 8rem;
+}
+
+/* Add a bug */
+
+.bar-bugs-add {
+  width: 90rem; 
+}
+
+.material-symbols-rounded {
+  font-size: 4rem;
+  color: var(--primary-color)
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color)
+}
+
+/* Table */
 
 .container {
   display: flex;
@@ -42,7 +115,7 @@ header {
 #bugs {
   border-collapse: collapse;
   width: 90rem;
-  margin-top: 10rem;
+  margin-top: 1.5rem;
 }
 
 #bugs td, #bugs th {
@@ -63,6 +136,10 @@ header {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+#bugs td {
+  letter-spacing: normal;
 }
 
 #bugs thead tr :first-child {
