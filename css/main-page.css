@@ -1,0 +1,73 @@
+/* MAIN-BUG LIST PAGE */
+
+/* Navigation */
+
+header {
+    background-color: var(--primary-color);
+    height: 8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  header ul{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  header img{
+    display: block;
+    width: 4rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  /* Table */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bugs {
+  border-collapse: collapse;
+  width: 90rem;
+  margin-top: 10rem;
+}
+
+#bugs td, #bugs th {
+  border: .1rem solid #ddd;
+  padding: .8rem;
+  text-transform: capitalize;
+}
+
+#bugs tr:nth-child(even){background-color: var(--primary-50-color);}
+
+#bugs tr:hover {background-color: var(--primary-100-color);}
+
+#bugs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#bugs thead tr :first-child {
+  border-top-left-radius: 1.5rem;
+}
+#bugs thead tr :last-child {
+  border-top-right-radius: 1.5rem;
+}

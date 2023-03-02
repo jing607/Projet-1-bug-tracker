@@ -8,49 +8,59 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-page.css">
 </head>
 
 <body>
     <header>
-        <h1>Bug Tracker</h1>
+      <ul>
+        <li><img src="./sources/bug.svg" alt="logo-bug tracker"></li>
+        <li><h1>Bug Tracker</h1></li>
+    </ul>
     </header>
-    <hr/>
+
     <main class="container">
 
         <table id="bugs">
-            <tr>
-              <th>bug tracker désignation</th>
-              <th>date</th>
-              <th>nom</th>
-              <th>état</th>
-              <th>ajouter</th>
-            </tr>
-            <tr>
-              <td>bug1</td>
-              <td>2023-02-27</td>
-              <td>nom1</td>
-              <td>
-                <select name="state" id="etat">
-                    <option value="">Non traité</option>
-                    <option value="">En cours</option>
-                    <option value="">Traité</option>
-                  </select>
-              </td>
-              <td>
-                <button>supprimer</button>
-              </td>
-            </tr>
+            <thead>
+              <tr>
+                <th>désignation</th>
+                <th>date</th>
+                <th>nom</th>
+                <th>état</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              <tr>
+                <td>bug1</td>
+                <td>2023-02-27</td>
+                <td>nom1</td>
+                <td>
+                  <select name="state">
+                      <option value="0">Non traité</option>
+                      <option value="1">En cours</option>
+                      <option value="2">Traité</option>
+                    </select>
+                </td>
+                <td>
+                  <button>supprimer</button>
+                </td>
+              </tr>
+            </tbody>
             
-          </table>
+        </table>
+        <a href="javascript:void(0)" onclick="load();">Run JavaScript Code</a>
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>
             &copy; - hj xu - <time datetime="2023-02-27">2023</time>
         </p>
-    </footer>
+    </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./js/main.js" ></script>

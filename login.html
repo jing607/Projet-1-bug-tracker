@@ -6,60 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bug Tracker-Login</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-page.css">
 </head>
 
 <body>
     <header>
-        <h1>Bienvenue à Bug Tracker！</h1>
+        <ul>
+            <li><img src="./sources/bug.svg" alt="logo-bug tracker"></li>
+            <li><h1>Bug Tracker</h1></li>
+        </ul>
     </header>
-    <hr/>
+    <!-- <hr/> -->
     <main class="container">
 
-        <div class="form-container" role="region" aria-labelledby="form-login form-register">
+        <section class="form-container" role="region" aria-labelledby="form-login form-register">
             <form id="login-form">
               <h2>Login</h2>
-              <div class="input-box">
-                <label for="login-username">Nom d'utilisateur:</label>
-                <input type="text" id="login-username" name="login-username" required>
-              </div>
-              <div class="input-box">
-                <label for="login-password">Mot de passe:</label>
-                <input type="password" id="login-password" name="login-password" required>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="login-username">Nom d'utilisateur:</label>
+                  <input type="text" id="login-username" name="login-username" required>
+                </div>
+                <div class="input-box">
+                  <label for="login-password">Mot de passe:</label>
+                  <input type="password" id="login-password" name="login-password" required>
+                </div>
               </div>
 
               <div class="btn-form">
-                <button id="btn-login-a" type="submit">Login</button>
-                <button id="btn-register-a" type="submit">Register</button>
+                <button id="btn-login-a" class="primary-btn" type="submit">Login</button>
+                <button id="btn-register-a" class="text-btn" type="submit">S'inscrire</button>
               </div>
             </form>
 
 
             <form id="register-form">
               <h2>S'inscrire</h2>
-              <div class="input-box">
-                <label for="register-username">Nom d'utilisateur:</label>
-                <input type="text" id="register-username" name="register-username" required>
-              </div>
-              <div class="input-box">
-                <label for="register-password">Mot de passe:</label>
-                <input type="password" id="register-password" name="register-password" required>
-              </div>
-              <div class="input-box">
-                <label for="register-password">Confirmez votre mot de passe:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="register-username">Nom d'utilisateur:</label>
+                  <input type="text" id="register-username" name="register-username" required>
+                </div>
+                <div class="input-box">
+                  <label for="register-password">Mot de passe:</label>
+                  <input type="password" id="register-password" name="register-password" required>
+                </div>
+                <div class="input-box">
+                  <label for="register-password">Confirmez votre mot de passe:</label>
+                  <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
               </div>
 
               <div class="btn-form">
-                <button id="btn-login-b" type="submit">Login</button>
-                <button id="btn-register-b" type="submit">Register</button>
+                <button id="btn-register-b" class="primary-btn" type="submit">S'inscrire</button>
+                <button id="btn-login-b" class="text-btn" type="submit">Login</button>
               </div>
             </form>
             
-        </div>
+        </section>
 
     </main>
 
