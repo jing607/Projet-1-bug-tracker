@@ -60,7 +60,7 @@ header{
     border-bottom: .1rem solid #fff; 
   }
   
-/* FORM */
+/* Form */
 
   .form-container {
     width: 100%;
@@ -140,9 +140,13 @@ header{
   .primary-btn {
     color: #fff;
     background-color: var(--primary-color);
-    padding: 0.8rem 3rem;
+    padding: 1.4rem 2.5rem;
     border-radius: 0.8rem;
     cursor: pointer;
+  }
+  .primary-btn:hover {
+    box-shadow: 0 0.4em 0.4em 0.3em var(--primary-50-color);
+    transform: translateY(-0.04em);
   }
   
   .text-btn {
