@@ -5,7 +5,6 @@
 header{
   background-color: var(--primary-color);
   height: 8rem;
-  max-width: 1140px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -67,7 +66,7 @@ header h1 {
   display: flex;
   flex-direction: row;
   margin: 8rem 0;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .overview-bloc{
@@ -86,10 +85,10 @@ header h1 {
 /* Add a bug */
 
 .bar-bugs-add {
-  width: 90rem; 
+  width: 100rem; 
 }
 
-.material-symbols-rounded {
+.bar-bugs-add .material-symbols-rounded {
   font-size: 4rem;
   color: var(--primary-color)
 }
@@ -114,7 +113,7 @@ header h1 {
 
 #bugs {
   border-collapse: collapse;
-  width: 90rem;
+  width: 100rem;
   margin-top: 1.5rem;
 }
 
@@ -147,4 +146,21 @@ header h1 {
 }
 #bugs thead tr :last-child {
   border-top-right-radius: 1.5rem;
+}
+
+#bugs .material-symbols-rounded {
+  font-size: 2rem;
+  color: var(--body-color);
+}
+
+#bugs .text-btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  font-weight: 600;
+  color: var(--body-color);
+  background-color: #fff;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracker-Nouveau bug</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-page.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-main">
+          <ul class="logo">
+            <li><img src="./sources/bug.svg" alt="logo-bug tracker"></li>
+            <li><h1>Bug Tracker</h1></li>
+          </ul>
+          <nav class="menu">
+            <a href="complete-list.html">Liste complète</a>
+            <a href="todo.html">À traiter</a>
+            <a href="login.html">Se déconnecter</a>
+          </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="form-container" role="region" aria-labelledby="form-add-bug">
+            <form id="addbug-form">
+              <h2>Nouveau bug</h2>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="title-newbug">Titre</label>
+                  <input type="text" id="title-newbug" name="title-newbug" required></input>
+                </div>
+                <div class="input-box">
+                  <label for="description-newbug">Description</label>
+                  <textarea type="text" id="description-newbug" placeholder="Décrire ce nouveau bug" name="description-newbug" required></textarea>
+                </div>
+              </div>
+
+              <div class="btn-form">
+                <button id="" class="primary-btn" type="submit">Enregistrer</button>
+                <button id="" class="text-btn" type="submit">Discard</button>
+              </div>
+            </form> 
+        </section>
+
+    </main>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/main.js" ></script>
+
+</body>
+
+</html>

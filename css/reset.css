@@ -5,7 +5,7 @@ html{
     scroll-behavior: smooth;
     background: rgb(218, 218, 218)；
 }
-body{
+body, textarea{
     font: 1.6rem 'Work Sans', sans-serif;
     line-height: 1.6;
     letter-spacing: .1rem;
@@ -14,17 +14,20 @@ body{
   
 }
 
-h1,h2,h3,h4,p,figure,ul, button{
+h1,h2,h3,h4,p,figure,ul, a, button{
   margin: 0;
   padding: 0;
   list-style: none;
   border: none;
   background-color: none;
+  text-decoration: none
 }
 
 a{
-  text-decoration: none;
   color: #222;
+}
+button{
+  font: 1.6rem 'Work Sans', sans-serif;
 }
 
 * {
