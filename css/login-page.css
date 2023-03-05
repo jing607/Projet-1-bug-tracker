@@ -1,32 +1,32 @@
 /* LOGIN PAGE */
 
 header {
-    background-color: var(--primary-color);
-    height: 8rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: var(--primary-color);
+  height: 8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     
-  header ul{
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  header img{
-    display: block;
-    width: 4rem;
-  }
-  
-  header h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-  }
+header ul{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img{
+  display: block;
+  width: 4rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
   
 /* Form */
 
@@ -76,11 +76,11 @@ header {
 }
 
 .input-box {
-display: flex;
-flex-direction: column;
-padding: 0;
-gap: .5rem;
-height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: .5rem;
+  height: 7.5rem;
 }
 
 .input-box input {
