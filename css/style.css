@@ -4,13 +4,13 @@
 
 :root{
   --primary-color: #513eff;
-  --body-color : #222;
+  --body-color: #222;
   --primary-100-color: #C6C0FF;
-  --primary-50-color : #EDEBFF;
+  --primary-50-color: #EDEBFF;
   
-  --gray-300-color : #D4D3E0;
-  --shadow-bg-color : rgba(5, 0, 51, 0.08);
-  --shadow-sm-color : rgba(4, 0, 36, 0.08);
+  --gray-300-color: #D4D3E0;
+  --shadow-bg-color: rgba(5, 0, 51, 0.08);
+  --shadow-sm-color: rgba(4, 0, 36, 0.08);
   --btn-color : var(--primary-color);
 }
 

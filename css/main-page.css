@@ -90,7 +90,7 @@ header h1 {
 
 .bar-bugs-add .material-symbols-rounded {
   font-size: 4rem;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .btn-add {
@@ -100,8 +100,10 @@ header h1 {
   justify-content: flex-end;
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
+
+
 
 /* Table */
 
@@ -128,8 +130,8 @@ header h1 {
 #bugs tr:hover {background-color: var(--primary-100-color);}
 
 #bugs th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   text-align: left;
   background-color: var(--primary-color);
   color: white;
@@ -153,14 +155,193 @@ header h1 {
   color: var(--body-color);
 }
 
-#bugs .text-btn-icon {
+.text-btn-icon {
+  text-transform: capitalize;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   justify-content: flex-end;
   font-weight: 600;
   color: var(--body-color);
-  background-color: #fff;
   border-radius: 0.8rem;
   cursor: pointer;
+}
+
+/* .select-item {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  position: relative;
+
+  color: var(--body-color);
+  text-decoration: none;
+  border: .2rem solid var(--body-color);
+  border-radius: .2rem;
+  padding: .4rem 1rem .4rem 1rem;
+  display: block;
+} */
+
+.dropdown {
+  font: 1.4rem 'Work Sans', sans-serif;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1300px) and (min-width: 740px){
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 3rem;
+  }
+  
+  .menu {
+    display: flex;
+    position: absolute;
+    right: 3rem;
+    gap: 2rem;
+  }
+  
+  .menu a {
+    font-size: 1.4rem;
+    height: 2.5rem;
+  }
+  
+  /* Table */
+
+  #bugs {
+    border-collapse: collapse;
+    width: 80rem;
+    margin-top: 1rem;
+  }
+  
+  #bugs th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  
+  #bugs .material-symbols-rounded {
+    font-size: 2rem;
+  }
+
+  /* Add a bug */
+
+  .bar-bugs-add {
+    width: 80rem; 
+  }
+
+  .bar-bugs-add .material-symbols-rounded {
+    font-size: 4rem;
+    color: var(--primary-color)
+  } 
+
+}
+
+
+
+@media screen and (max-width: 740px) and (min-width: 460px){
+  header{
+      font-size: 1.6rem;
+  }
+
+  .logo {
+    position: absolute;
+    left: 3rem;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 0;
+    width: 0;
+    height: 100vh;
+    top: 4rem;
+    right: 0;
+    background-color: var(--primary-color);
+  }
+  .show-nav .menu {
+    width: 50%;
+  }
+
+  .menu > a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.6rem;
+    transition: all .4s ease-in-out;
+  }
+  .menu > a:hover {
+    padding-left: 3rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 4rem;
+    padding: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 4.5rem;
+    height: .5rem;
+    background: #fff;
+    border-radius: .3rem;
+  }
+  .bar::before, .bar::after  {
+    content: '';
+    width: 4.5rem;
+    height: .5rem;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-radius: .3rem;
+  }
+  .bar::before {
+    transform: translateY(-1.2rem);
+  }
+  .bar::after {
+    transform: translateY(1.2rem);
+  }
+
+  /* Table */
+  
+  #bugs {
+    border-collapse: collapse;
+    width: 60rem;
+    margin-top: 1rem;
+  }
+  
+  #bugs th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  
+  #bugs .material-symbols-rounded {
+    font-size: 2rem;
+  }
+
+  /* Add a bug */
+
+  .bar-bugs-add {
+    width: 60rem; 
+  }
+
+  .bar-bugs-add .material-symbols-rounded {
+    font-size: 4rem;
+    color: var(--primary-color)
+  }  
+
 }

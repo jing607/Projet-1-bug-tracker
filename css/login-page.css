@@ -28,7 +28,7 @@ header {
     text-transform: uppercase;
   }
   
-/* FORM */
+/* Form */
 
 .form-container {
   width: 100%;
@@ -119,3 +119,44 @@ height: 7.5rem;
   border-bottom: .1rem solid var(--body-color); 
 }
   
+/* Mobile */
+
+@media screen and (max-width: 1300px) and (min-width: 740px){
+
+  .form-container {
+    padding: 8rem;
+  }
+
+  #login-form, #register-form {
+    width: 45rem;
+    padding: 4rem 4rem;
+    gap: 2rem;
+  }
+
+  .input-box input {
+    width: 32rem;
+  }
+
+}
+
+@media screen and (max-width: 740px) and (min-width: 460px){
+  header{
+      font-size: 1.4rem;
+  }
+
+  .form-container {
+    padding: 6rem;
+  }
+
+  #login-form, #register-form {
+    width: 40rem;
+    padding: 3rem 3rem;
+    gap: 2rem;
+  }
+
+  .input-box input {
+    width: 30rem;
+    height: 5rem;
+  }
+
+}

@@ -20,55 +20,61 @@
           <li><h1>Bug Tracker</h1></li>
         </ul>
         <nav class="menu">
-          <a href="complete-list.html">Liste complète</a>
+          <a href="list.html">Liste complète</a>
           <a href="todo.html">À traiter</a>
           <a href="index.html">Se déconnecter</a>
         </nav>
+        <button class="burger">
+          <span class="bar"></span>  
+        </button> 
       </div>
     </header>
 
     <main class="container">
 
-        <figure class="bugs-overview">
-          <span class="overview-bloc"><img src="sources/web-coding.svg" alt=""><p>8 bugs</p></span>
-          <span class="overview-bloc"><img src="sources/in-progress.svg" alt=""><p>5 en cours</p></span>
-          <span class="overview-bloc"><img src="sources/check-mark.svg" alt=""><p>1 traité</p></span>
-        </figure>
+      <figure class="bugs-overview">
+        <span class="overview-bloc"><img src="sources/web-coding.svg" alt=""><p><span><strong id="bug_count_total">0</strong></span> bugs</p></span>
+        <span class="overview-bloc"><img src="sources/in-progress.svg" alt=""><p><span><strong id="bug_count_inpr">0</strong></span> en cours</p></span>
+        <span class="overview-bloc"><img src="sources/check-mark.svg" alt=""><p><span><strong id="bug_count_finish">0</strong></span> traité</p></span>
+      </figure>
 
-        <div class="bar-bugs-add">
-          <a class="btn-add" href="add.html"><span class="material-symbols-rounded">add_circle</span>Ajouter un bug</a>
-        </div>
+      <div class="bar-bugs-add">
+        <a class="btn-add" href="add.html"><span class="material-symbols-rounded">add_circle</span>Ajouter un bug</a>
+      </div>
 
-        <table id="bugs">
-            <thead>
-              <tr>
-                <th>désignation</th>
-                <th>date</th>
-                <th>nom</th>
-                <th>état</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="table_body">
-              <tr>
-                <td>bug1</td>
-                <td>2023-02-27</td>
-                <td>nom1</td>
-                <td>
-                  <select name="state">
-                      <option value="0">Non traité</option>
-                      <option value="1">En cours</option>
-                      <option value="2">Traité</option>
-                    </select>
-                </td>
-                <td>
-                  <button class="text-btn-icon"><span class="material-symbols-rounded">delete</span>supprimer</button>
-                </td>
-              </tr>
-            </tbody>
-            
-        </table>
-        <a href="javascript:void(0)" onclick="load();">Regarder plus</a>
+      <table id="bugs">
+          <thead>
+            <tr>
+              <th>désignation</th>
+              <th>date</th>
+              <th>nom</th>
+              <th>état</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="select-item">
+                  <select class="dropdown" name="state">
+                    <span class="accent"></span>
+                    <option value="0">Non traité</option>
+                    <option value="1">En cours</option>
+                    <option value="2">Traité</option>
+                  </select>
+                </div>
+              </td>
+              <td>
+                <button>supprimer</button>
+              </td>
+            </tr> -->
+          </tbody>
+          
+      </table>
+      <a href="javascript:void(0)" onclick="load();">Regarder plus</a>
 
     </main>
 
